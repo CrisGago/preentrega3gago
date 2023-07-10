@@ -1,0 +1,39 @@
+main {
+    grid-area: main;
+
+    .destacado {
+        margin: nth($size, 5);
+        font-size: nth($size, 5);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+
+        #carouselinicio {
+            width: 450px;
+            height: 350px;
+        }
+
+        .centrar {
+            width: 450px;
+            height: 350;
+        }
+    }
+
+    h2 {
+        padding: nth($size, 4);
+        margin: nth($size, 1);
+        font-size: nth($szfont , 3);
+        font-family: $ffont;
+    }
+
+    @media (max-width: 576px) {
+        display: none;
+    }
+
+}
+

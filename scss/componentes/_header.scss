@@ -1,0 +1,57 @@
+header {
+    background-repeat: no-repeat;
+    background-repeat: map-get($header_prin, 1);
+    background-position-x: map-get($header_prin, 2);
+    margin: map-get($header_prin, 3);
+    grid-area: header;
+
+    .logo {
+        img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    h1 {
+        @include titulos(nth($size, 6), nth($colrs, 2), 0);
+        color: black;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   
+}
+
+aside{
+    font-family: $ffont;
+    font-size: nth($szfont, 4);
+    text-align: center;
+    text-justify: auto;
+ 
+    @media (max-width: 576px) {
+        display: none
+    }
+}
+
+#main_soluciones {
+    h2 {
+        font-size: nth($size, 6);
+        color: nth($colrs, 5);
+        padding: nth($size, 4);
+        margin: o;
+    }
+
+    h3 {
+        color: nth($colrs, 3);
+        background-color: nth($colrs, 1);
+        margin: nth($size, 1);
+        padding: nth($size , 4);
+    }
+
+    p {
+        font-weight: bold;
+        text-justify: auto;
+        padding: nth($size, 4) nth($size, 7);
+    }
+}
+
+

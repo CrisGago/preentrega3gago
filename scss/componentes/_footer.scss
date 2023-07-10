@@ -1,0 +1,10 @@
+footer{
+    section{
+        display: flex;
+    }
+    p{
+        padding: nth($size, 1);  
+        font-family: $ffont;  
+        font-size: calc($mrgb / 4);
+    }
+}

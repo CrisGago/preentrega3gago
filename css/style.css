@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*variables*/ /*tamaños*/
+/*colores*/
+/*font*/
+/*esta clasificación lo puedo utilizar
+para todo no solo para margen*/
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-size: 20px;
+  padding: 20px 30px;
+  display: block;
+}
+nav ul li a:hover {
+  background-color: rgb(255, 235, 205);
+}
+
+/*Componenetes*/
+footer section {
+  display: flex;
+}
+footer p {
+  padding: 5px;
+  font-family: "Comic Neue", cursive;
+  font-size: 12.5px;
+}
+
+header {
+  background-repeat: no-repeat;
+  grid-area: header;
+}
+header .logo img {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  font-size: 30px;
+  background-color: blanchedalmond;
+  margin: 0;
+  color: black;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+aside {
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  text-align: center;
+  text-justify: auto;
+}
+@media (max-width: 576px) {
+  aside {
+    display: none;
+  }
+}
+
+#main_soluciones h2 {
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  margin: o;
+}
+#main_soluciones h3 {
+  color: orange;
+  background-color: rgb(255, 235, 205);
+  margin: 5px;
+  padding: 20px;
+}
+#main_soluciones p {
+  font-weight: bold;
+  text-justify: auto;
+  padding: 20px 40px;
+}
+
+@media (max-width: 576px) {
+  nav ul li a {
+    font-size: 15px;
+    padding: 5px 10px;
+    display: flex;
+  }
+}
+
+main {
+  grid-area: main;
+}
+main .destacado {
+  margin: 25px;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+main div {
+  display: flex;
+  justify-content: space-around;
+}
+main div #carouselinicio {
+  width: 450px;
+  height: 350px;
+}
+main div .centrar {
+  width: 450px;
+  height: 350;
+}
+main h2 {
+  padding: 20px;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Comic Neue", cursive;
+}
+@media (max-width: 576px) {
+  main {
+    display: none;
+  }
+}
+
+section {
+  grid-area: section;
+}
+section h3 {
+  background-color: rgb(255, 235, 205);
+  color: orange;
+}
+section p {
+  text-align: justify;
+}
+
+.grid_contenido {
+  margin: 30px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 0.5fr 0.9fr 0.5fr;
+  display: flex;
+  justify-content: space-around;
+}
+.grid_contenido .destacado1 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.grid_contenido .img1 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link1 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+.grid_contenido .destacado2 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .img2 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link2 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+.grid_contenido .destacado3 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .img3 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link3 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+.grid_contenido .mision {
+  grid-area: mision;
+  display: flex;
+  justify-content: center;
+  grid-template-rows: 50% 50%;
+  font: "Comic Neue", cursive h2;
+  font-background-color: violet;
+}
+.grid_contenido .mision p {
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .grid_contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

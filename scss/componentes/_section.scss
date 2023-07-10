@@ -1,0 +1,117 @@
+section {
+    grid-area: section;
+
+    h3 {
+        background-color: nth($colrs, 1);
+        color: nth($colrs, 3);
+    }
+
+    p {
+        text-align: justify;
+    }
+
+}
+
+.grid_contenido {
+    margin: nth($size, 6);
+    padding: nth($size, 7);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 0.5fr 0.9fr 0.5fr;
+    display: flex;
+    justify-content: space-around;
+
+    .destacado1 {
+        grid-area: destacado;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .img1 {
+        height: 350px;
+        width: 200px;
+        grid-area: imagen1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link1 {
+        grid-area: link1;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+    }
+
+    .destacado2 {
+        grid-area: destacado;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img2 {
+        height: 350px;
+        width: 200px;
+        grid-area: imagen1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link2 {
+        grid-area: link1;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+    }
+
+    .destacado3 {
+        grid-area: destacado;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img3 {
+        height: 350px;
+        width: 200px;
+        grid-area: imagen1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link3 {
+        grid-area: link1;
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+    }
+    .mision{
+        grid-area: mision;
+        display: flex;
+        justify-content: center;
+        grid-template-rows: 50% 50%;
+        font: $ffont
+        h2{
+            background-color: violet;
+        }
+        p{
+            justify-content: center;
+        }
+    }
+    @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+

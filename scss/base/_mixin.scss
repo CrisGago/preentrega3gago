@@ -1,0 +1,6 @@
+@mixin titulos($size, $colrs, $marg){
+    font-size: $size; 
+    background-color: $colrs;
+    margin: $marg;
+
+}

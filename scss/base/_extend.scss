@@ -1,0 +1,37 @@
+%row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+%text {
+    a {
+        text-decoration: none;
+    }
+}
+
+%menu {
+    ul {
+        text-align: right;
+
+        li {
+            display: inline-block;
+
+
+            a {
+                font-size: nth($size, 4);
+                padding: nth($size, 4) nth($size, 6);
+                display: block;
+
+                &:hover {
+                    background-color: nth($colrs, 1);
+                }
+
+            }
+
+
+        }
+    }
+}

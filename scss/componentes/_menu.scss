@@ -1,0 +1,17 @@
+nav {
+    @extend %text;
+    @extend %menu;
+
+    @media (max-width: 576px) {
+        ul {
+            li {
+                a {
+                    font-size: nth($size, 3);
+                    padding: nth($size, 1) nth($size, 2);
+                    display: flex;
+
+                }
+            }
+        }
+    }
+}
