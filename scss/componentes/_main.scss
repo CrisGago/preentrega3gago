@@ -16,11 +16,12 @@ main {
         #carouselinicio {
             width: 450px;
             height: 350px;
+            background-size: cover;
         }
 
         .centrar {
-            width: 450px;
-            height: 350;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -31,9 +32,44 @@ main {
         font-family: $ffont;
     }
 
-    @media (max-width: 576px) {
-        display: none;
-    }
 
 }
 
+@media (max-width: 650px) {
+
+
+    .logo img {
+        display: flex;
+
+    }
+
+    header {
+        background-image: none;
+        background-position: center;
+
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li a {
+        font-size: 15px;
+        display: flex;
+        padding: 5px 10px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}

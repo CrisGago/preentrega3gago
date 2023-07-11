@@ -9,6 +9,36 @@ section {
     p {
         text-align: justify;
     }
+    .mision{
+        h3{
+            background-color:aliceblue;
+            padding: 25px;
+            font-size: nth($size, 7);
+        }
+        p{
+            font-family: $ffont;
+        }
+    }
+    .vision{
+        h3{
+            background-color:aliceblue;
+            padding: 25px;
+            font-size: nth($size, 7);
+        }
+        p{
+            font-family: $ffont;
+        }
+    }
+    .accion{
+        h3{
+            background-color:aliceblue;
+            padding: 25px;
+            font-size: nth($size, 7);
+        }
+        p{
+            font-family: $ffont;
+        }
+    }
 
 }
 
@@ -93,25 +123,4 @@ section {
         font-family: 'Courier New', Courier, monospace;
         font-size: medium;
     }
-    .mision{
-        grid-area: mision;
-        display: flex;
-        justify-content: center;
-        grid-template-rows: 50% 50%;
-        font: $ffont
-        h2{
-            background-color: violet;
-        }
-        p{
-            justify-content: center;
-        }
-    }
-    @media (max-width: 576px) {
-        display: flex;
-        flex-direction: column;
-    }
-    
 }
-
-
-
